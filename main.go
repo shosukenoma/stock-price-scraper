@@ -64,8 +64,8 @@ func main() {
 		fmt.Println("Company:", stock.company)
 		stock.price = e.ChildText("fin-streamer[data-field='regularMarketPrice']")
 		fmt.Println("Price:", stock.price)
-		// stock.change = e.ChildText("class='text-base font-bold leading-6 md:text-xl md:leading-7 rtl:force-ltr'") 
-		// fmt.Println("Change:", stock.change)
+		stock.change = e.ChildText("fin-streamer[data-field='regularMarketChangePercent']")
+		fmt.Println("Change:", stock.change)
 		// stock.volume = e.ChildText("class='font-bold tracking-[0.2px]'") 
 		// fmt.Println("Volume:", stock.volume)
 
