@@ -45,3 +45,6 @@ This article is helpful in understanding how to retrieve data from HTML elements
 
 [Introduction to bufio package in Golang](https://medium.com/golangspec/introduction-to-bufio-package-in-golang-ad7d1877f762#:~:text=bufio.Writer%20sends%20data%20only%20when%20buffer%20is%20either%20full%20or%20when%20explicitly%20requested%20with%20Flush%20method.)  
 This article is helpful in understanding the bufio package and the role of `defer writer.Flush()`.
+
+Banner Image  
+COPYRIGHT (C) 2021 BIDAALA STUDIO/SHUTTERSTOCK
