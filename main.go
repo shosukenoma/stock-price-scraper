@@ -12,26 +12,28 @@ type Stock struct{
 
 func main() {
 
-	urls := []string{
-		"https://finance.yahoo.com/quote/NKE/",
-    "https://finance.yahoo.com/quote/KO/",
-    "https://finance.yahoo.com/quote/MSFT/",
-    // "https://www.investing.com/equities/3m-co",
-    // "https://www.investing.com/equities/american-express",
-    // "https://www.investing.com/equities/amgen-inc",
-    // "https://www.investing.com/equities/apple-computer-inc",
-    // "https://www.investing.com/equities/boeing-co",
-    // "https://www.investing.com/equities/cisco-sys-inc",
-    // "https://www.investing.com/equities/goldman-sachs-group",
-    // "https://www.investing.com/equities/ibm",
-    // "https://www.investing.com/equities/intel-corp",
-    // "https://www.investing.com/equities/jp-morgan-chase",
-    // "https://www.investing.com/equities/mcdonalds",
-    // "https://www.investing.com/equities/salesforce-com",
-    // "https://www.investing.com/equities/verizon-communications",
-    // "https://www.investing.com/equities/visa-inc",
-    // "https://www.investing.com/equities/wal-mart-stores",
-    // "https://www.investing.com/equities/disney",
+	ticker := []string{
+		"UNP",
+		"COST",
+    "SLNO",
+		"MSFT",
+		"SEZL",
+		// "MMM",
+    // "AXP",
+    // "AMGN",
+    // "AAPL",
+    // "BA",
+    // "CSCO",
+    // "GS",
+    // "IBM",
+    // "INTC",
+    // "JPM",
+    // "MCD",
+    // "CRM",
+    // "VZ",
+    // "V",
+    // "WMT",
+    // "DIS",
 	}
 
 	// Initialize a slice to store structs for each Stock
@@ -73,9 +75,9 @@ func main() {
 		stocks = append(stocks, stock)
 	})
 
-	for _, stock := range urls {
+	for _, t := range ticker {
 		// c.Visit() has to come after all the callback functions
-		c.Visit(stock)
+		c.Visit("https://finance.yahoo.com/quote/" + t + "/")
 	}
 
 	fmt.Println(stocks)
