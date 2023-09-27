@@ -1,4 +1,4 @@
-# stock-scraper
+# stock-price-scraper
 
 Inspired by following article and added my own taste with my interest in the finance industry:
 
