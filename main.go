@@ -7,32 +7,32 @@ import (
 )
 
 type Stock struct{
-	company, price, change, volume string
+	company, price, change string
 }
 
 func main() {
 
-	// urls := []string{
-	// 	"https://www.investing.com/equities/nike",
-  //   "https://www.investing.com/equities/coca-cola-co",
-  //   "https://www.investing.com/equities/microsoft-corp",
-  //   "https://www.investing.com/equities/3m-co",
-  //   "https://www.investing.com/equities/american-express",
-  //   "https://www.investing.com/equities/amgen-inc",
-  //   "https://www.investing.com/equities/apple-computer-inc",
-  //   "https://www.investing.com/equities/boeing-co",
-  //   "https://www.investing.com/equities/cisco-sys-inc",
-  //   "https://www.investing.com/equities/goldman-sachs-group",
-  //   "https://www.investing.com/equities/ibm",
-  //   "https://www.investing.com/equities/intel-corp",
-  //   "https://www.investing.com/equities/jp-morgan-chase",
-  //   "https://www.investing.com/equities/mcdonalds",
-  //   "https://www.investing.com/equities/salesforce-com",
-  //   "https://www.investing.com/equities/verizon-communications",
-  //   "https://www.investing.com/equities/visa-inc",
-  //   "https://www.investing.com/equities/wal-mart-stores",
-  //   "https://www.investing.com/equities/disney",
-	// }
+	urls := []string{
+		"https://finance.yahoo.com/quote/NKE/",
+    "https://finance.yahoo.com/quote/KO/",
+    "https://finance.yahoo.com/quote/MSFT/",
+    // "https://www.investing.com/equities/3m-co",
+    // "https://www.investing.com/equities/american-express",
+    // "https://www.investing.com/equities/amgen-inc",
+    // "https://www.investing.com/equities/apple-computer-inc",
+    // "https://www.investing.com/equities/boeing-co",
+    // "https://www.investing.com/equities/cisco-sys-inc",
+    // "https://www.investing.com/equities/goldman-sachs-group",
+    // "https://www.investing.com/equities/ibm",
+    // "https://www.investing.com/equities/intel-corp",
+    // "https://www.investing.com/equities/jp-morgan-chase",
+    // "https://www.investing.com/equities/mcdonalds",
+    // "https://www.investing.com/equities/salesforce-com",
+    // "https://www.investing.com/equities/verizon-communications",
+    // "https://www.investing.com/equities/visa-inc",
+    // "https://www.investing.com/equities/wal-mart-stores",
+    // "https://www.investing.com/equities/disney",
+	}
 
 	// Initialize a slice to store structs for each Stock
 	stocks := []Stock{}
@@ -73,10 +73,10 @@ func main() {
 		stocks = append(stocks, stock)
 	})
 
-	// for _, stock := range urls {
+	for _, stock := range urls {
 		// c.Visit() has to come after all the callback functions
-		c.Visit("https://finance.yahoo.com/quote/NKE/")
-	// }
+		c.Visit(stock)
+	}
 
 	fmt.Println(stocks)
 	
