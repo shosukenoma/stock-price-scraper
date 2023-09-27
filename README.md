@@ -23,7 +23,7 @@ Run the following command in the terminal:
 go run main.go
 ```
 Once the program finishes running, you will see a `stocks.csv` file generated in the same directory.  
-<img src="/assets/images/csv_file_created.png" alt="Screenshot of the new .csv being created" width="200" style={padding: 10px 0;}/>
+<img src="/assets/images/csv_file_created.png" alt="Screenshot of the new .csv being created" width="200" style="padding: 10px 0;"/>
 
 ## Acknowledgements
 
