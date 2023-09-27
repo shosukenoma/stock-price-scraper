@@ -1,4 +1,4 @@
-# stock-price-scraper
+# Stock Price Scraper using Go and Colly
 
 Inspired by following article and added my own taste with my interest in the finance industry:
 
