@@ -22,7 +22,8 @@ Run the following command in the terminal:
 ```
 go run main.go
 ```
-Once the program finishes running, you will see a `stocks.csv` file generated in the same directory.
+Once the program finishes running, you will see a `stocks.csv` file generated in the same directory.  
+![Screenshot of the new .csv being created](/assets/images/csv_file_created.png)
 
 ## Acknowledgements
 
