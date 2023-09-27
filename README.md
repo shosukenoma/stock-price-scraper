@@ -10,7 +10,7 @@ This Go project performs the following tasks:
 
 ## Install
 To run this project, you will need to install [Go](https://go.dev/doc/install)  
-Once you have Go installed on your local machine, run the following commands on terminal:
+Once you have Go installed on your local machine, run the following commands in the terminal:
 ```
 git clone https://github.com/shosukenoma/stock-price-scraper.git
 go get -u github.com/gocolly/colly/...
@@ -18,7 +18,11 @@ go get -u github.com/gocolly/colly/...
 
 ## Getting Started
 
-(The goal is to guide the reader in what to do once he has just installed your project in his environment.)
+(The goal is to guide the reader in what to do once he has just installed your project in his environment.)  
+Run the following command in the terminal:
+```
+go run main.go
+```
 
 ## Acknowledgements
 
