@@ -16,13 +16,13 @@ git clone https://github.com/shosukenoma/stock-price-scraper.git
 go get -u github.com/gocolly/colly/...
 ```
 
-## Getting Started
+## Usage
 
-(The goal is to guide the reader in what to do once he has just installed your project in his environment.)  
 Run the following command in the terminal:
 ```
 go run main.go
 ```
+Once the program finishes running, you will see a `stocks.csv` file generated in the same directory.
 
 ## Acknowledgements
 
