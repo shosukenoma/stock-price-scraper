@@ -4,8 +4,9 @@
 ## Overview
 This Go project performs the following tasks:
 - Takes in a list of company ticker symbols (e.g. AMZN for Amazon.com, Inc.)
-- Sends HTTP requests to retrieve data from web pages that contain the companies' stock information
-- Writes out the specified information to a .csv file
+- Sends HTTP requests to retrieve HTML from target web pages
+- Extracts data on stock prices by specifying HTML elements
+- Writes out the retrieved data to a .csv file
 
 
 
