@@ -81,6 +81,7 @@ func main() {
 	})
 
 	// Resolved bottleneck section {writer.Write(record)}
+	// context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 	// Helps program wait to write csv file until all scraping is done.
 	c.Wait()
 
@@ -136,5 +137,6 @@ func main() {
 // https://blog.logrocket.com/building-web-scraper-go-colly/
 // https://www.zenrows.com/blog/web-scraping-golang#scrape-product-data
 
+// Chat GPT question:
 // I want to extract the text of this HTML element using Colly in the Go (or GoLang) programming language. How can I achieve this?
 // <fin-streamer class="Fw(b) Fz(36px) Mb(-4px) D(ib)" data-symbol="NKE" data-test="qsp-price" data-field="regularMarketPrice" data-trend="none" data-pricehint="2" value="90.17" active="">90.17</fin-streamer>
