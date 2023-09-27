@@ -122,3 +122,13 @@ func main() {
 	// defer writer.Flush()
 }
 
+
+
+// https://www.geeksforgeeks.org/web-scraping-for-stock-prices-in-python/
+// https://medium.com/@shahidahmed.org/programming-in-go-for-web-scraping-aedf937e769d
+// https://medium.com/@arnesh07/how-golang-can-save-you-days-of-web-scraping-72f019a6de87
+// https://blog.logrocket.com/building-web-scraper-go-colly/
+// https://www.zenrows.com/blog/web-scraping-golang#scrape-product-data
+
+// I want to extract the text of this HTML element using Colly in the Go (or GoLang) programming language. How can I achieve this?
+// <fin-streamer class="Fw(b) Fz(36px) Mb(-4px) D(ib)" data-symbol="NKE" data-test="qsp-price" data-field="regularMarketPrice" data-trend="none" data-pricehint="2" value="90.17" active="">90.17</fin-streamer>
