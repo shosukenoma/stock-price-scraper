@@ -16,6 +16,10 @@ git clone https://github.com/shosukenoma/stock-price-scraper.git
 go get -u github.com/gocolly/colly/...
 ```
 
+## Getting Started
+
+(The goal is to guide the reader in what to do once he has just installed your project in his environment.)
+
 ## Acknowledgements
 
 This project is inspired by [Web Scraping in Golang: Complete Guide 2023](https://www.zenrows.com/blog/web-scraping-golang#how-to-web-scrape-in-go)  
